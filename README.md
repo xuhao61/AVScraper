@@ -8,6 +8,7 @@
 pip install -r .\requirements.txt
 ```
 3、然后进入javsdt目录执行CreateIni.py
+
 4、接下来按需求执行如JavbusYouma.py
 
 注意，执行方法可以使用命令行如
