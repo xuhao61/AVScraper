@@ -1,3 +1,6 @@
+## javsdt的分支Fake_javsdt，用于修复javsdt的各种bug以及接受pull request。由于原作者暂停更新和修复bug，所以欢迎各位修复提交PR。
+
+
 # jav-standard-tool 简称javsdt
 # 作者为生活所迫，已经跑路...
 简介：收集影视元数据，并规范本地文件（夹）的格式，收集演员头像，为emby、kodi、jellyfin、极影派等影片管理软件铺路。  
