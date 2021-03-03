@@ -19,6 +19,10 @@ python JavbusYouma.py
 在windows下也可以直接双击运行
 
 
+# Log 记录
+- [x] 21.2.25 fix 有码无法刮削genre和tag
+
+
 
 # jav-standard-tool 简称javsdt
 # 作者为生活所迫，已经跑路...
