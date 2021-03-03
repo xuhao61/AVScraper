@@ -5,7 +5,7 @@
 
 2、进入[Release](https://github.com/fanza1/Fake_javsdt/releases)，下载最新版本源码
 
-3、根目录下运行pip install安装执行环境
+3、找到根目录下的requirements.txt，然后运行pip install安装执行环境
 ```
 pip install -r .\requirements.txt
 ```
