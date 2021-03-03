@@ -20,7 +20,8 @@ python JavbusYouma.py
 
 
 # Log 记录
-- [x] 21.2.25 fix 有码无法刮削genre和tag
+- [x] 21.2.25 fix JavBus有码无法刮削genre和tag
+- [x] 21.3.4 fix JavBus无码无法刮削genre和tag
 
 
 
