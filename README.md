@@ -3,13 +3,15 @@
 ### 源码使用方法，
 1、先安装python最新版本。
 
-2、根目录下运行pip install安装执行环境
+2、进入[Release](https://github.com/fanza1/Fake_javsdt/releases)，下载最新版本源码
+
+3、根目录下运行pip install安装执行环境
 ```
 pip install -r .\requirements.txt
 ```
-3、然后进入javsdt目录执行CreateIni.py
+4、然后进入javsdt目录执行CreateIni.py
 
-4、接下来按需求执行如JavbusYouma.py
+5、接下来按需求执行如JavbusYouma.py
 
 注意，执行方法可以使用命令行如
 ```
