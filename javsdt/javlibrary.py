@@ -399,7 +399,7 @@ while input_start_key == '':
                 scoreg = re.search(r'score">\((.+?)\)<', html_web)
                 if str(scoreg) != 'None':
                     float_score = float(scoreg.group(1))
-                    float_score = (float_score - 4) * 5 / 3  # javlibrary上稍微有人关注的影片评分都是6分以上（10分制），强行把它差距拉大
+                    #float_score = (float_score - 4) * 5 / 3  # javlibrary上稍微有人关注的影片评分都是6分以上（10分制），强行把它差距拉大
                     if float_score >= 0:
                         score = '%.1f' % float_score
                     else:
