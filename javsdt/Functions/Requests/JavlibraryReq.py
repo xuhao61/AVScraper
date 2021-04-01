@@ -30,7 +30,12 @@ def get_library_html(url, proxy):
         if re.search(r'JAVLibrary', rqs_content):        # 得到想要的网页，直接返回
             return rqs_content
         else:                                         # 代理工具返回的错误信息
-            print('    >打开网页失败，空返回...重新尝试...')
+            print('    >打开网页失败，空返回...尝试cfscrape...')
+            #print(url)
+            scraper = cfscrape.create_scraper()
+            web_data = scraper.get(url).text
+            #print(web_data)
+            return web_data
             continue
     print('>>请检查你的网络环境是否可以打开：', url)
     os.system('pause')
