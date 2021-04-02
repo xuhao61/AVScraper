@@ -324,6 +324,8 @@ while input_start_key == '':
                     review = ''
                 # print(review)
                 # 有大部分信息的html_web
+                html_all = html_web
+                #print(html_all)
                 html_web = re.search(r'video_title"([\s\S]*?)favorite_edit', html_web, re.DOTALL).group(1)
                 # DVD封面cover
                 coverg = re.search(r'src="(.+?)" width="600', html_web)
@@ -396,16 +398,38 @@ while input_start_key == '':
                     continue
                 # print(genres)
                 # 评分
+                userswant = re.search(r'<a href="userswanted.+?">(.+?)</a>', html_all)
+                #print(str(userswant))
+                usersNum = int(re.compile(r'(?<=">)\d+').findall(str(userswant))[0])
+                #pattern
+                # print(usersNum)
+
                 scoreg = re.search(r'score">\((.+?)\)<', html_web)
                 if str(scoreg) != 'None':
                     float_score = float(scoreg.group(1))
+                    #print(float_score)
                     #float_score = (float_score - 4) * 5 / 3  # javlibrary上稍微有人关注的影片评分都是6分以上（10分制），强行把它差距拉大
+                    #start 避免小众高分影片霸榜的算法
+                    if ("蓝光" in genres): #防止蓝光版被误伤
+                        float_score = float_score
+                    # 降低某些genre的权重，可以自行添加，以下两种"肛交"和"灌肠"仅用于示例，没有附带任何观点和立场。
+                    elif (("肛交" in genres) or ("灌肠" in genres)) and (usersNum < 100) and (float_score > 8):
+                        float_score = float_score * 0.7
+                    elif (usersNum < 100) and (float_score > 8):
+                        float_score = float_score * 0.8
+                    elif (usersNum < 200) and (float_score > 8):
+                        float_score = float_score * 0.85
+                    elif (usersNum < 300) and (float_score > 9):
+                        float_score = float_score * 0.9
+                    #end 避免小众高分影片霸榜的算法
                     if float_score >= 0:
                         score = '%.1f' % float_score
                     else:
                         score = '0'
                 else:
+                    print("error: no score")
                     score = '0'
+                #print(score)
                 dict_data['评分'] = score
                 # 烂番茄评分 用上面的评分*10
                 criticrating = str(float(score) * 10)
