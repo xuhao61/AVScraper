@@ -413,13 +413,13 @@ while input_start_key == '':
                     if ("蓝光" in genres): #防止蓝光版被误伤
                         float_score = float_score
                     # 降低某些genre的权重，可以自行添加，以下两种"肛交"和"灌肠"仅用于示例，没有附带任何观点和立场。
-                    elif (("肛交" in genres) or ("灌肠" in genres)) and (usersNum < 200) and (float_score > 8):
+                    elif (("肛交" in genres) or ("灌肠" in genres)) and (usersNum < 300) and (float_score > 8):
                         float_score = float_score * 0.7
                     elif (usersNum < 100) and (float_score > 8):
                         float_score = float_score * 0.75
                     elif (usersNum < 200) and (float_score > 8):
                         float_score = float_score * 0.85
-                    elif (usersNum < 300) and (float_score > 9):
+                    elif (usersNum < 300) and (float_score > 8.4):
                         float_score = float_score * 0.9
                     #end 避免小众高分影片霸榜的算法
                     if float_score >= 0:
