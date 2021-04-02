@@ -28,7 +28,7 @@ python JavbusYouma.py
 ```
 pip install -U cfscrape
 ```
-
+- [x] 21.4.2 new feature 增加避免小众高分影片霸榜的算法
 
 # jav-standard-tool 简称javsdt
 # 作者为生活所迫，已经跑路...
