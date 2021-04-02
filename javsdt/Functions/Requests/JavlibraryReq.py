@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 import re, os, requests
 # from traceback import format_exc
-
+import cfscrape
 # 功能：请求各大jav网站和arzon的网页
 # 参数：网址url，请求头部header/cookies，代理proxy
 # 返回：网页html，请求头部
