@@ -35,8 +35,10 @@ def get_library_html(url, proxy):
             scraper = cfscrape.create_scraper()
             web_data = scraper.get(url).text
             #print(web_data)
-            return web_data
-            continue
+            if re.search(r'JAVLibrary', web_data):
+                return web_data
+            else:
+                continue
     print('>>请检查你的网络环境是否可以打开：', url)
     os.system('pause')
 
