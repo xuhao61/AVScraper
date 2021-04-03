@@ -1,13 +1,15 @@
 ## javsdt的分支Fake_javsdt，用于修复javsdt的各种bug以及接受pull request。由于原作者暂停更新和修复bug，所以欢迎各位修复提交PR。
 
 ### 源码使用方法，
-1、先安装python最新版本。
+1、先安装python和node.js最新版本。
 
 2、进入[Release](https://github.com/fanza1/Fake_javsdt/releases)，下载最新版本源码
 
 3、找到根目录下的requirements.txt，然后运行pip install安装执行环境
 ```
 pip install -r .\requirements.txt
+
+pip install -U cfscrape
 ```
 4、然后进入javsdt目录执行CreateIni.py
 
