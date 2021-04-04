@@ -1,7 +1,7 @@
-## Fake_javsdt 日本AV(JAV)刮削
-用于修复javsdt的各种bug以及接受pull request。由于原作者暂停更新和修复bug，所以欢迎各位修复提交PR。
+## AVScraper for JAV 日本AV(JAV)刮削
+原作者暂停更新和修复bug。开此分支用于维护javsdt并且继续开发，接受pull request，欢迎提交新功能和修复bug。
 
-欢迎开发者加入
+为了维护及开发新功能，欢迎各位开发者加入
 
 Todo:
 - [ ] 由于缺少相关背景，需要有会使用Emby API的大佬帮助整合进入Emby。(参考Javscraper: https://github.com/JavScraper/Emby.Plugins.JavScraper ）
