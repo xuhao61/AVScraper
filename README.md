@@ -1,27 +1,33 @@
-## javsdt的分支Fake_javsdt，用于修复javsdt的各种bug以及接受pull request。由于原作者暂停更新和修复bug，所以欢迎各位修复提交PR。
+## Fake_javsdt 日本AV(JAV)刮削
+用于修复javsdt的各种bug以及接受pull request。由于原作者暂停更新和修复bug，所以欢迎各位修复提交PR。
+
+欢迎开发者加入
+
+Todo:
+- [ ] 由于缺少相关背景，需要有会使用Emby API的大佬帮助整合进入Emby。(参考Javscraper: https://github.com/JavScraper/Emby.Plugins.JavScraper ）
 
 ### 源码使用方法，
-1、先安装python和node.js最新版本。
+1、先安装[Python3](https://www.python.org/downloads/)和[Node.js](https://nodejs.org/zh-cn/download/)最新版本。
 
 2、进入[Release](https://github.com/fanza1/Fake_javsdt/releases)，下载最新版本源码
 
 3、找到根目录下的requirements.txt，然后运行pip install安装执行环境
 ```
 pip install -r .\requirements.txt
-
 pip install -U cfscrape
 ```
 4、然后进入javsdt目录执行CreateIni.py
 
 5、接下来按需求执行如JavbusYouma.py
 
-注意，执行方法可以使用命令行如
+* 注意，执行方法可以使用命令行如
 ```
 python CreateIni.py
 python JavbusYouma.py
 ```
 在windows下也可以直接双击运行
 
+* javlibrary刮削出错建议更换网址，图书馆官方网址发布：http://www.javlibrary.com/cn/publictopic.php?id=13483
 
 # Log 记录
 - [x] 21.2.25 fix JavBus有码无法刮削genre和tag
