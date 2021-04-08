@@ -1,4 +1,4 @@
-## AVScraper for JAV 日本AV(JAV)刮削
+## Adult Video Scraper for JAV 日本AV(JAV)刮削整理
 原作者暂停更新和修复bug。开此分支用于维护javsdt并且继续开发，接受pull request，欢迎提交新功能和修复bug。
 
 为了维护及开发新功能，欢迎各位加入TG群https://t.me/javsdtool
