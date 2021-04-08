@@ -1,4 +1,4 @@
-## Adult Video Scraper for JAV 日本AV(JAV)刮削整理
+# Adult Video Scraper for JAV 日本AV(JAV)刮削整理
 原作者暂停更新和修复bug。开此分支用于维护javsdt并且继续开发，接受pull request，欢迎提交新功能和修复bug。
 
 为了维护及开发新功能，欢迎各位加入TG群https://t.me/javsdtool
@@ -6,7 +6,7 @@
 Todo:
 - [ ] 由于缺少相关背景，需要有会使用Emby API的大佬帮助整合进入Emby。(参考Javscraper: https://github.com/JavScraper/Emby.Plugins.JavScraper 和jellyfin-plugin-avdc：https://github.com/xjasonlyu/jellyfin-plugin-avdc）
 
-### 源码使用方法，
+## 源码使用方法，
 1、先安装[Python3](https://www.python.org/downloads/)和[Node.js](https://nodejs.org/zh-cn/download/)最新版本。
 
 2、进入[Release](https://github.com/fanza1/Fake_javsdt/releases)，下载最新版本源码
@@ -20,16 +20,19 @@ pip install -U cfscrape
 
 5、接下来按需求执行如JavbusYouma.py
 
-* 注意，执行方法可以使用命令行如
+## 常见问题
+* 注意，执行方法可以打开cmd或PowerShell使用命令行如
 ```
+pip install -r .\requirements.txt
+pip install -U cfscrape
 python CreateIni.py
 python JavbusYouma.py
 ```
-在windows下也可以直接双击运行
+对于windows用户也可以直接双击运行，选择python执行
 
-* javlibrary刮削出错建议更换网址，图书馆官方网址发布：http://www.javlibrary.com/cn/publictopic.php?id=13483
+* javlibrary免翻墙刮削出错建议更换网址，图书馆官方网址发布：http://www.javlibrary.com/cn/publictopic.php?id=13483
 
-# Log 记录
+## Log 记录
 - [x] 21.2.25 fix JavBus有码无法刮削genre和tag
 - [x] 21.3.4 fix JavBus无码无法刮削genre和tag
 - [x] 21.4.2 fix javlibrary评分错乱的问题，移除作者瞎搞的评分算法，忠于图书馆的评分。修复由于cf造成的无法获取javlibrary网页的问题，但需要用户安装最新版node.js并且在命令行执行
