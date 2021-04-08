@@ -38,8 +38,10 @@ pip install -U cfscrape
 ```
 - [x] 21.4.2 new feature 增加避免小众高分影片霸榜的算法
 
-# jav-standard-tool 简称javsdt
-# 作者为生活所迫，已经跑路...
+
+# 以下为原repo的Readme
+## jav-standard-tool 简称javsdt
+## 作者为生活所迫，已经跑路...
 简介：收集影视元数据，并规范本地文件（夹）的格式，收集演员头像，为emby、kodi、jellyfin、极影派等影片管理软件铺路。  
 
   
