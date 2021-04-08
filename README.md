@@ -4,7 +4,7 @@
 为了维护及开发新功能，欢迎各位加入TG群https://t.me/javsdtool
 
 Todo:
-- [ ] 由于缺少相关背景，需要有会使用Emby API的大佬帮助整合进入Emby。(参考Javscraper: https://github.com/JavScraper/Emby.Plugins.JavScraper ）
+- [ ] 由于缺少相关背景，需要有会使用Emby API的大佬帮助整合进入Emby。(参考Javscraper: https://github.com/JavScraper/Emby.Plugins.JavScraper 和jellyfin-plugin-avdc：https://github.com/xjasonlyu/jellyfin-plugin-avdc）
 
 ### 源码使用方法，
 1、先安装[Python3](https://www.python.org/downloads/)和[Node.js](https://nodejs.org/zh-cn/download/)最新版本。
