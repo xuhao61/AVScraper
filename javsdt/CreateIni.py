@@ -68,7 +68,7 @@ try:
     config_settings.set("信息来源", "是否用javlibrary整理影片时优先从javbus下载图片？", "否")
     config_settings.add_section("其他设置")
     config_settings.set("其他设置", "简繁中文？", "简")
-    config_settings.set("其他设置", "javlibrary网址", "https://www.b47w.com/")
+    config_settings.set("其他设置", "javlibrary网址", "http://www.f50q.com/")
     config_settings.set("其他设置", "javbus网址", "https://www.buscdn.me")
     config_settings.set("其他设置", "javdb网址", "https://javdb6.com/")
     config_settings.set("其他设置", "扫描文件类型", "mp4、mkv、avi、wmv、iso、rmvb、flv、ts")
